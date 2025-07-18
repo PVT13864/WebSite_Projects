@@ -1,0 +1,715 @@
+
+/*######################################## demo ############################*/
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #0d49b1;
+  color: #ffffff;
+  padding: 1px 1px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+  display: flex;
+  justify-content: flex-start; /* Align items at the start */
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: slideInDown 0.5s ease; /* Added animation */
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.nav-item a::after {
+  content: " ▼"; /* Unicode arrow symbol */
+  font-size: 10px; /* Adjust arrow size */
+  color: inherit; /* Match the text color */
+  margin-left: 5px; /* Space between text and arrow */
+  display: inline-block; /* Ensure it aligns properly */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-item:hover a::after {
+  transform: rotate(540deg);
+ 
+  -webkit-transform: rotate(540deg);
+  -moz-transform: rotate(540deg);
+  -ms-transform: rotate(540deg);
+  -o-transform: rotate(540deg);
+}
+
+
+@keyframes slideInDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.navbar:hover {
+  background-color: #022e5d;
+}
+
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: auto; /* Push the logo to the left */
+}
+
+.logo img {
+  height: 85px;
+  width:90px;
+  margin: 0 5px;
+  padding-bottom:0.1rem ;
+}
+
+.logo h1 {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Desktop Navigation Menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 10px;
+  gap:75px;
+  transition: all 0.3s ease;
+  margin-left: auto; /* Push nav items to the right of the logo */
+}
+
+.nav-item {
+  position: relative;
+  padding: 2px;
+  margin: 0.1px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between; /* This ensures the text and icon are spaced out */
+  align-items: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.nav-item i {
+  margin-left:auto; /* Pushes the icon to the far right */
+  padding-left: 5px; /* Adds some space between the text and the icon */
+}
+
+/* Navbar Styles - Added Auth Buttons */
+.auth-buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-button {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1px 7px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.auth-button:hover {
+  background-color: #15063f;
+  transform: scale(1.05);
+}
+
+
+.auth-button.login:hover {
+  background-color: #15063f;
+}
+
+/* Responsive Adjustments for Auth Buttons */
+@media (max-width: 768px) {
+  .auth-buttons {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  .auth-button {
+      font-size: 14px;
+      padding: 6px 10px;
+  }
+}
+
+
+/* Responsive Adjustments for Auth Buttons */
+@media (max-width: 768px) {
+  .auth-buttons {
+      top: 15px;
+      right: 15px;
+      flex-direction: column;
+      gap: 5px;
+  }
+}
+
+
+
+.nav-item a:hover,
+.nav-item a:focus {
+  background-color: #080597f4;
+  transform: scale(1.1);
+  border-radius: 50px;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* Dropdown Menu Styling */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333582;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.368);
+  padding: 10px 0;
+  margin-top: 0.4rem;
+  min-width: 200px;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.dropdown ul {
+  list-style-type:circle;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li {
+  position: relative;
+  padding: 6px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+}
+
+.dropdown ul li:hover {
+  background-color: #282ed7;
+}
+
+/* Nested Dropdown Styling */
+.dropdown ul ul {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #333582;
+  padding: 0;
+  border-radius: 0px;
+  min-width: 200px;
+  z-index: 101;
+}
+
+.dropdown ul li:hover > ul {
+  display: block;
+}
+
+/* Show Dropdown on Hover */
+.nav-item:hover .dropdown,
+.nav-item:focus-within .dropdown {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 0.2s ease-in-out;
+  -webkit-animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-5px); -webkit-transform: translateY(-5px); -moz-transform: translateY(-5px); -ms-transform: translateY(-5px); -o-transform: translateY(-5px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#home, #about, #events, #membership, #news, #contact {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005a99;
+  transform: scale(1.05);
+}
+
+/* Membership Tiers */
+.membership-tiers {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.membership-tiers div {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.membership-tiers div:hover {
+  transform: scale(1.05);
+}
+
+.membership-tiers h3 {
+  font-size: 1.5em;
+  color: #005a99;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  align-self: start;
+}
+
+/* Footer */
+/* Ensure footer styling */
+/* Ensure footer styling */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1px 1px;
+  margin-top: 1px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Apply gap directly to footer items */
+  flex-wrap: wrap;
+}
+
+footer p{
+  text-align:center;
+}
+
+/* Adjusted Social Media Links */
+.social-media-link {
+  display: inline-flex;
+  gap: 30px; /* Space between icons */
+}
+
+.social-media-link i {
+  font-size: 1.3rem;
+  padding: 1px;
+  color: #ffffff;
+  background-color: #260080;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.social-media-link i:hover {
+  background-color: #162076; /* Change color on hover */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-menu {
+      gap: 10px;
+  }
+
+  .nav-item a {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-menu {
+      display: none;
+  }
+
+  .mobile-menu-toggle {
+      display: block;
+  }
+
+  .nav-menu.active {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      z-index: 1000;
+  }
+
+  .nav-item a {
+      font-size: 20px;
+      padding: 10px 20px;
+  }
+
+  .dropdown ul li {
+      padding: 10px 20px;
+      font-size: 18px;
+  }
+
+  .membership-tiers {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  section h2 {
+      font-size: 1.5em;
+  }
+
+  button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .logo {
+      margin-bottom: 10px;
+  }
+
+  .nav-item a {
+      font-size: 18px;
+      padding: 12px 15px;
+  }
+
+  .mobile-menu-toggle {
+      font-size: 26px;
+  }
+
+  section h2 {
+      font-size: 1.3em;
+  }
+
+  .nav-menu {
+      font-size: 0.9em;
+  }
+
+  .membership-tiers div {
+      padding: 15px;
+  }
+}
+/*#################################### about page css ##################################*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+main {
+  padding: 0.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #003366;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.intro, .values, .heritage, .faculty, .location, .contact {
+  line-height: 1.8;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links ul li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.quick-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact & Newsletter */
+footer {
+  background-color: #003366;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  width: 200px;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: #ffd700;
+  color: #003366;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.newsletter button:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+      padding: 1rem;
+  }
+
+  header h1, footer h2 {
+      font-size: 1.5rem;
+  }
+
+  footer {
+      text-align: left;
+  }
+
+  .newsletter input[type="email"] {
+      width: 100%;
+      margin-bottom: 0.5rem;
+  }
+
+  .newsletter button {
+      width: 100%;
+  }
+}
+
+.body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f9f9f9;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.cp-settings-panel {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+max-width: 400px;
+width: 100%;
+}
+
+.cp-settings-panel h3 {
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+}
+
+.cp-settings-panel p {
+margin: 15px 0 5px;
+color: #555;
+}
+
+.cp-settings-select select {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.cp-settings-switch-block {
+text-align: center;
+margin-top: 20px;
+}
+
+.btn-danger {
+background-color: #dc3545;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.btn-danger:hover {
+background-color: #c82333;
+}

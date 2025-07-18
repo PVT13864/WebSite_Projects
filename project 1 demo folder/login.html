@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form for- DR.KNMIET Alumni Network Student Login Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #2980b9, #6dd5fa);
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+
+    form label {
+      display: block;
+      margin: 12px 0 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: 0.3s ease;
+    }
+
+    form input:focus {
+      border-color: #3498db;
+    }
+
+    .otp-fields {
+      display: flex;
+      gap: 10px;
+    }
+
+    .otp-fields input {
+      flex: 1;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      .otp-fields {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Login / Verification Form</h2>
+    <form id="studentForm">
+      <label for="name">Student Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="">Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+      </select>
+
+      <label for="branch">Branch</label>
+      <input type="text" id="branch" name="branch" required />
+
+      <label for="department">Department</label>
+      <input type="text" id="department" name="department" required />
+
+      <label for="rollno">Roll No</label>
+      <input type="text" id="rollno" name="rollno" required />
+
+      <label for="passout">Pass Out Year</label>
+      <input type="text" id="passout" name="passout" required />
+
+      <label for="contact">Contact No</label>
+      <input type="text" id="contact" name="contact" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label>OTP Verification</label>
+      <div class="otp-fields">
+        <input type="text" placeholder="OTP by HOD" id="otpHod" required />
+        <input type="text" placeholder="OTP by Department" id="otpDept" required />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("studentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Form Submitted Successfully!");
+      // Yahan pe aap backend se OTP verification logic connect kar sakte ho
+    });
+  </script>
+
+</body>
+</html>

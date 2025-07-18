@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page Header -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p>Your go-to place for managing tasks efficiently.</p>
+            <a href="#todo-section" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We provide tools to make your day more productive and organized. Explore the simplicity of managing your to-dos with our intuitive application.</p>
+        </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo-section">
+        <div class="container">
+            <h2>To-Do List</h2>
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <button id="addTaskButton">Add Task</button>
+            </div>
+            <ul id="taskList"></ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

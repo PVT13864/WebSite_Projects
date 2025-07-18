@@ -1,0 +1,30 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+...
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skills-grid span,
+  .projects-grid .project-card {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .slide .item {
+    width: 200px;
+    height: 250px;
+  }
+}

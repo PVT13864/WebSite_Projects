@@ -1,0 +1,17 @@
+{
+  "name": "7-days-mern-stack-blog-website-source-code-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend/my-blog && npm run dev",
+    "backend": "cd backend && node index.js",
+    "dev": "concurrently\"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

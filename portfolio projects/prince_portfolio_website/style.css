@@ -1,0 +1,59 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+header.hero {
+  background: linear-gradient(135deg, #007BFF, #00C6FF);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.navbar {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 600;
+}
+.section {
+  padding: 40px 20px;
+}
+.skills-grid, .projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.skills-grid span, .project-card {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #007BFF;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}

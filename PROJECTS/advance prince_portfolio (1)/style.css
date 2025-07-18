@@ -1,0 +1,170 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f0f1a;
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1f1f3d, #13132d);
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #7f80ff;
+  text-shadow: 0 0 10px #7f80ff;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Perfect circle */
+  object-fit: cover;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-picture img:hover {
+  transform: scale(1.05);
+}
+
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2d2df0;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.navbar {
+  background: #1e1e30;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-grid span, .projects-grid .project-card {
+  display: inline-block;
+  background: #20203a;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 12px;
+  color: #7f80ff;
+  font-weight: bold;
+}
+ #certificate .projects-grid {
+      overflow-x: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 20px;
+      padding: 10px;
+    }
+
+    #certificate .projects-grid a, #certificate .projects-grid img {
+      flex: 0 0 auto;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      background: white;
+      padding: 10px;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    #certificate .projects-grid img {
+      object-fit: contain;
+    }
+
+
+#certificate .projects-grid {
+      overflow-x: auto;
+      display: flex;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    #certificate .projects-grid img {
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    #certificate .projects-grid a {
+      text-decoration: none;
+    }
+
+    #certificate .projects-grid::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    #certificate .projects-grid::-webkit-scrollbar-thumb {
+      background: #08b0c6;
+      border-radius: 10px;
+    }
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #1f1f3d;
+  border: none;
+  color: white;
+}
+
+form button {
+  background: #2d2df0;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e30;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .profile-picture img {
+    width: 150px;
+    height: 150px;
+  }
+}

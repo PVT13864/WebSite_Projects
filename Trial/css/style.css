@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    font-family:"montserrat",sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+
+}
+
+a{
+    font-size:  1.5rem;
+    text-decoration: none;
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+.navbar{
+    border: #161616;
+    padding:2rem;
+    color: rgb(18, 18, 18);
+    background-color: #5c5858;
+}
+
+.container{
+    border: #c05c5c;
+
+}
+.name-heading {
+   float: left;
+}
+
+.nav-items{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+
+/*#################################### main ##############################*/
+.main{
+    background-color: #9feeeb;
+    height: 100%;
+    width: 100%;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.div-1 {
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+
+.section-2 {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-around; /* Space the items evenly */
+    padding: 50px; /* Add padding around the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.div-2 {
+    margin: 10px; /* Add margin around each div */
+}
+
+.div-2 img {
+    width: 150px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-me{
+    float: center;
+    text-align: center;
+    text-transform: capitalize;
+    text-size-adjust: bold;
+}

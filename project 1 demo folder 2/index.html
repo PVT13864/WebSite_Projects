@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Official Alumni Association Network of DR.KNMIET</title>
+
+    <meta name="author" content="Micro-G Infotech">
+    <meta name="description" content="KNMIET is the top MBA, B.Tech, Engineering college & institute in Meerut, Modi Nagar, UP. This is the reputed group of institutions.">
+    <meta name="keywords" content="top mba college in meerut, top b.tech college in meerut, top engineering college in meerut, business school, institute in meerut, modi nagar, UP">
+    <link rel="canonical" href="index.html">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto%20Condensed" rel="stylesheet">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="css/css-plugin-collections.css" rel="stylesheet">
+    <link id="menuzord-menu-skins" href="/css/css/menuzord-skins/menuzord-rounded-boxed.css" rel="stylesheet">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/style-sheet.css" rel="stylesheet" type="text/css">
+    <link href="Settings_files/cp-settings.css" rel="stylesheet">
+    <link rel="stylesheet" href="Settings_files/ionicons.min.css">
+    <link href="/javascript/js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css">
+    <link href="/javascript/js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css">
+    <link href="/javascript/js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/style_sheet.css">
+
+    <script src="https://kit.fontawesome.com/617bc0ea79.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="/javascript/js/jquery-2.2.4.min.js"></script>
+    <script src="/javascript/js/jquery-ui.min.js"></script>
+    <script src="/javascript/js/bootstrap.min.js"></script>
+    <script src="/javascript/js/jquery-plugin-collection.js"></script>
+    <script src="/javascript/js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="/javascript/js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-91169238-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5934f563b3d02e11ecc683b4/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".department").change(function() {
+                var id = $(this).val();
+                var dataString = 'id=' + id;
+                $.ajax({
+                    type: "POST",
+                    url: "ajax/get_department.php",
+                    data: dataString,
+                    cache: false,
+                    success: function(html) {
+                        $("#course").html(html);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body class="" style="font-family: 'Roboto Condensed'">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="container">
+                    <div class="image">
+                        <img src="../img/FinalLogo.png" alt="Logo" width="100" height="100">
+                    </div>
+                    <div class="text">
+                        <div class="text-cursive">The Official Alumni Association of</div>
+                        <div>Dr. K.N. MODI INSTITUTE OF ENGINEERING AND TECHNOLOGY</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html">Home</a></li>
+                <li class="nav-item">
+                    <a href="./about.html">About Us</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Overview</li>
+                            <li>Vision & Mission</li>
+                            <li>Objectives & Activities</li>
+                            <li>Advisors</li>
+                            <li>Wiser</li>
+                            <li>Past Presidents</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Alumni Community Club</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Top Alumni in the Limelight</li>
+                            <li>Notable Alumni</li>
+                            <li>Achiever Alumni</li>
+                            <li>Who is Who</li>
+                            <li>Alumni Family</li>
+                            <li>Engage
+                                <ul>
+                                    <li>Be a Mentor</li>
+                                    <li>Share Achievements</li>
+                                    <li>Share Opportunities</li>
+                                    <li>Invite Friends</li>
+                                    <li>Volunteer</li>
+                                </ul>
+                            </li>
+                            <li>Send Query</li>
+                            <li>Contribution by Alumni</li>
+                            <li>Help Us Reach Greater Heights
+                                <ul>
+                                    <li>Contributions/Donations</li>
+                                    <li>Infrastructure</li>
+                                    <li>Research Fellowships</li>
+                                    <li>Scholarships</li>
+                                    <li>Library</li>
+                                    <li>Training & Professional Development</li>
+                                    <li>Offers</li>
+                                </ul>
+                            </li>
+                            <li>Feedback</li>
+                            <li>Alumni Directory</li>
+                            <li>Alumni Nearby Us</li>
+                            <li>Year Book</li>
+                            <li>Groups</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contact Us</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>By Email</li>
+                            <li>WhatsApp Groups</li>
+                            <li>LinkedIn</li>
+                            <li>Phone Number</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Events</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Calendar of Events</li>
+                            <li>Events & Activities</li>
+                            <li>Programmed Community Events</li>
+                            <li>Awards</li>
+                            <li>Affiliations & Permits</li>
+                            <li>Events Gallery
+                                <ul>
+                                    <li>Images</li>
+                                    <li>Videos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Newsroom</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Minutes of Meetings</li>
+                            <li>Daily Updates</li>
+                            <li>President's/Secretary's & Faculty Desk</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Student Services</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Advisors</li>
+                            <li>Mentors Community</li>
+                            <li>Student Interactions</li>
+                            <li>Top Performers</li>
+                            <li>Student Counseling Cell</li>
+                            <li>Entrepreneurship Cell</li>
+                            <li>Opportunities for Students
+                                <ul>
+                                    <li>Jobs</li>
+                                    <li>Internships</li>
+                                </ul>
+                            </li>
+                            <li>Affiliations & Certificates</li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="auth-buttons">
+                    <a href="./register.html" class="auth-button">Register</a>
+                    <a href="./login" class="auth-button login">Login</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Alumni Association</h2>
+            <p>Stay connected, informed, and inspired with our community of alumni.</p>
+            <button onclick="location.href='#membership'">Join Now</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our mission is to foster a lifelong relationship between the alumni and the institution.</p>
+            <div class="about-content">
+                <div>
+                    <h3>Our History</h3>
+                    <p>Founded in 1980, our alumni association has been dedicated to supporting graduates and fostering connections.</p>
+                </div>
+                <div>
+                    <h3>Board Members</h3>
+                    <p>Meet our dedicated team of alumni leaders.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Annual Reunion:</strong> April 15, 2024</li>
+                <li><strong>Networking Meetup:</strong> May 10, 2024</li>
+                <li><strong>Webinar on Career Growth:</strong> June 5, 2024</li>
+            </ul>
+        </section>
+
+        <section id="membership">
+            <h2>Membership</h2>
+            <p>Join our community to connect with other alumni, access exclusive resources, and more.</p>
+            <div class="membership-tiers">
+                <div>
+                    <h3>Regular Member</h3>
+                    <p>Access to events and newsletter.</p>
+                </div>
+                <div>
+                    <h3>Gold Member</h3>
+                    <p>All benefits, plus discounts on events.</p>
+                </div>
+                <div>
+                    <h3>Lifetime Member</h3>
+                    <p>All benefits for life, plus VIP event access.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <h2>News & Resources</h2>
+            <article>
+                <h3>Alumni Spotlight</h3>
+                <p>Our featured alumni this month is Jane Doe, a successful entrepreneur and philanthropist.</p>
+            </article>
+            <article>
+                <h3>Newsletter Signup</h3>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <button>Subscribe</button>
+            </article>
+        </section>
+
+        <section id="newsroom-updates">
+            <h2>Latest Updates</h2>
+            <div id="updates-container"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="newsroom.js"></script>
+
+    <div id="wrapper" class="clearfix">
+        <input type="checkbox" name="cp-settings-toggle" id="cp-settings-toggle">
+        <label for="cp-settings-toggle"><i class="fa fa-search" aria-hidden="true"></i></label>
+
+        <div class="cp-settings-panel">
+            <form action="#" method="post">
+                <h3>Find A Course</h3>
+
+                <p>Select Department</p>
+                <div class="cp-settings-select">
+                    <select class="department" name="department" id="department">
+                        <option value="no">Select Department</option>
+                        <option value="9">Department of Electrical Engineering</option>
+                        <option value="10">Department of Information Technology</option>
+                        <option value="11">Department of Mechanical Engineering</option>
+                        <option value="14">Department of Computer Science and Engineering</option>
+                        <option value="15">Department of BCA</option>
+                        <option value="16">Department of Applied Sciences & Humanities</option>
+                        <option value="17">Department of Civil Engineering</option>
+                        <option value="18">Department of Management</option>
+                        <option value="19">Department of Electronics & Communication Engineering</option>
+                        <option value="20">Department of Chemical Engineering</option>
+                    </select>
+                </div>
+
+                <p>Select Course</p>
+                <div class="cp-settings-select">
+                    <select name="course" id="course">
+                        <option>Select Department First</option>
+                    </select>
+                </div>
+
+                <div class="cp-settings-switch-block">
+                    <input type="submit" class="btn btn-danger" name="sors_sub" value="Submit"/>
+                </div>
+
+            </form>
+        </div>
+
+        <title>Top MBA, B.Tech, Engineering, College in Meerut, Modi Nagar, UP</title>
+        <meta name="description" content="KNMIET is the top MBA, B.Tech, Engineering college & institute in Meerut, Modi Nagar, UP. This is the reputed group of institutions." />
+        <meta name="keywords" content="top mba college in meerut, top b.tech college in meerut, top engineering college in meerut, business school, institute in meerut, modi nagar, UP" />
+        <link rel="canonical" href="index.html"/>
+
+        <script type="text/javascript">
+            var show = function(){
+                $('#myModalpop').modal('show');
+            };
+
+            $(window).load(function(){
+                var timer = window.setTimeout(show,2000);
+            });
+        </script>
+        <div id="myModalpop" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content" style="padding: 3px; background-color: #ffffff">
+                    <img width="100%" src="/img/DRKNMIET-DASHBOARD/Popup/dr.-knmietian_zy63JUpF7x3xqREMlMMO.jpg" alt="Dr. KNMIETian" />
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <section id="home">
+
+                <div class="rev_slider_wrapper">
+                    <div class="rev_slider" data-version="5.0">
+                        <ul>
+                            <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="DRKNMIET-DASHBOARD/Slider/_JC5OHH5K6UczpvLP6rVQ.jpeg" data-rotate="0" data-saveperformance="off" data-title="Slide 1" data-description="">
+                                <img class="img-responsive" src="/img/DRKNMIET-DASHBOARD/Slider/_JC5OHH5K6UczpvLP6rVQ.jpg"  alt="Dr. Knmiet"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-bgparallax="10" data-no-retina>
+                                <div class="tp-caption tp-resizeme text-uppercase text-white font-trajan bg-theme-colored-transparent border-right-theme-color-2-6px pr-20 pl-20"
+                                     id="rs-3-layer-1"
+
+                                     data-x="['right']"
+                                     data-hoffset="['30']"
+                                     data-y="['middle']"
+                                     data-voffset="['-100']"
+                                     data-fontsize="['32']"
+                                     data-lineheight="['72']"
+                                     data-width="none"
+                                     data-height="none"
+                                     data-whitespace="nowrap"
+                                     data-transform_idle="o:1;s:500"
+                                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                     data-start="1000"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-responsive_offset="on"
+                                     style="z-index: 7; white-space: nowrap; font-weight:600;">
+                                </div>
+
+                                <div class="tp-caption tp-resizeme text-uppercase text-white font-raleway"
+                                     id="rs-3-layer-2"
+
+                                     data-x="['right']"
+                                     data-hoffset="['35']"
+                                     data-y="['middle']"
+                                     data-voffset="['-25']"
+                                     data-fontsize="['22']"
+                                     data-lineheight="['54']"
+                                     data-width="none"
+                                     data-height="none"
+                                     data-whitespace="nowrap"
+                                     data-transform_idle="o:1;s:500"
+                                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                     data-start="1000"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-responsive_offset="on"
+                                     style="z-index: 7; white-space: nowrap; font-weight:600; text-shadow: rgb(26, 16, 37) 2px 2px 20px;">
+                                </div>
+
+                                <div class="tp-caption tp-resizeme text-white text-right"
+                                     id="rs-3-layer-3"
+
+                                     data-x="['right']"
+                                     data-hoffset="['35']"
+                                     data-y="['middle']"
+                                     data-voffset="['30']"
+                                     data-fontsize="['16']"
+                                     data-lineheight="['28']"
+                                     data-width="none"
+                                     data-height="none"
+                                     data-whitespace="nowrap"
+                                     data-transform_idle="o:1;s:500"
+                                     data-transform_in="y:100;scaleX:1;scaleY:1;opacity:0;"
+                                     data-transform_out="x:left(R);s:1000;e:Power3.easeIn;s:1000;e:Power3.easeIn;"
+                                     data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                     data-start="1400"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-responsive_offset="on"
+                                     style="z-index: 5; white-space: nowrap; letter-spacing:0px; font-weight:400; text-shadow: rgb(26, 16, 37) 2px 2px 20px;">
+                                </div>
+
+                                <div class="tp-caption tp-resizeme"
+                                     id="rs-3-layer-4"
+                                     data-x="['right']"
+                                     data-hoffset="['35']"
+                                     data-y="['middle']"
+                                     data-voffset="['95']"
+                                     data-width="none"
+                                     data-height="none"
+                                     data-whitespace="nowrap"
+                                     data-transform_idle="o:1;"
+                                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                     data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                     data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                                     data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"
+                                     data-start="1400"
+                                     data-splitin="none"
+                                     data-splitout="none"
+                                     data-responsive_offset="on"
+                                     style="z-index: 3; white-space: nowrap; letter-spacing:1px;">
+                  <!--<a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="http://erp.knmodi.in/AdmissionEnquiry/CRMEnquiryForm.aspx">Apply Now</a>a>-->
+                 <!--  <a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="https://knmodi.com/initiate_payment.aspx">Online Fee Payment</a>
+                 
+                  -->
+                  <!--<a class="btn btn-colored btn-lg btn-flat btn-theme-colored btn-theme-colored border-right-theme-color-2-6px pl-20 pr-20" href="?p=InternationalStudent">International Students</a>-->
+                  
+              </div>
+            </li>
+			          </ul>
+        </div>
+        <!-- end .rev_slider -->
+      </div>
+      <!-- end .rev_slider_wrapper -->
+      <script>
+        $(document).ready(function(e) {
+          $(".rev_slider").revolution({
+            sliderType:"standard",
+            sliderLayout: "auto",
+            dottedOverlay: "none",
+            delay: 5000,
+            navigation: {
+                keyboardNavigation: "off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation: "off",
+                onHoverStop: "off",
+                touch: {
+                    touchenabled: "on",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 1,
+                    swipe_direction: "horizontal",
+                    drag_block_vertical: false
+                },
+              arrows: {
+                style:"zeus",
+                enable:true,
+                hide_onmobile:true,
+                hide_under:600,
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                left: {
+                  h_align:"left",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                },
+                right: {
+                  h_align:"right",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                }
+              },
+              bullets: {
+                enable:true,
+                hide_onmobile:true,
+                hide_under:600,
+                style:"metis",
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                direction:"horizontal",
+                h_align:"center",
+                v_align:"bottom",
+                h_offset:0,
+                v_offset:30,
+                space:5,
+                tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+              }
+            },
+            responsiveLevels: [1240, 1024, 778],
+            visibilityLevels: [1240, 1024, 778],
+            gridwidth: [1170, 1024, 778, 480],
+            gridheight: [650, 768, 960, 720],
+            lazyType: "none",
+            parallax: {
+                origo: "slidercenter",
+                speed: 1000,
+                levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 100, 55],
+                type: "scroll"
+            },
+            shadow: 0,
+            spinner: "off",
+            stopLoop: "on",
+            stopAfterLoops: 0,
+            stopAtSlide: -1,
+            shuffle: "off",
+            autoHeight: "off",
+            fullScreenAutoWidth: "off",
+            fullScreenAlignForce: "off",
+            fullScreenOffsetContainer: "",
+            fullScreenOffset: "0",
+            hideThumbsOnMobile: "off",
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            debugMode: false,
+            fallbacks: {
+                simplifyAll: "off",
+                nextSlideOnWindowFocus: "off",
+                disableFocusListener: false,
+            }
+          });
+        });
+      </script>
+      <!-- Slider Revolution Ends -->
+
+    </section>
+
+    <!-- Section: home-boxes -->
+    <section class="bg-silver-light">
+      <div class="container pt-0 pb-0">
+        <div class="section-content">
+          <div class="row equal-height-inner home-boxes" data-margin-top="-100px">
+            <div class="col-sm-12 col-md-4 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+              <div class="sm-height-auto bg-theme-colored-darker2">
+                <a href="http://erp.knmodi.in/AdmissionEnquiry/CRMEnquiryForm.aspx" target="_blank"><div class="text-center pt-30 pb-30">
+                  <i class="fa fa-check-square-o text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="http://erp.knmodi.in/AdmissionEnquiry/CRMEnquiryForm.aspx" target="_blank" class="text-white">Apply Online</a></h4>
+                </div></a>
+              </div>
+           <!--  </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
+              <div class="sm-height-auto bg-theme-colored-darker3">
+                <a href="https://eazypay.icicibank.com/eazypayLink?P1=1QhTTNpsSD5s+PTTBtXs9g==" target="_blank"><div class="text-center pt-60 pb-30">
+                <img src="img/photos/eazypay1.png" alt="eazyPay"/>
+                  <!--<i class="fa fa-cc-paypal text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="https://eazypay.icicibank.com/eazypayLink?P1=1QhTTNpsSD5s+PTTBtXs9g==" target="_blank" class="text-white">Online Payment</a></h4>
+                </div></a>
+              </div>-->
+            </div>
+            <div class="col-sm-12 col-md-4 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
+              <div class="sm-height-auto bg-theme-colored-darker3">
+                <a href="https://knmodi.com/initiate_payment.aspx" target="_blank"><div class="text-center pt-60 pb-30">
+                <img src="img/photos/Online%20Fee.png" alt="Paytm"/>
+                 <!-- <i class="fa fa-cc-paypal text-white font-64"></i>-->
+                  <!--<h4 class="text-uppercase mt-20"><a href="https://paytm.com/education" target="_blank" class="text-white">Online Payment</a></h4>-->
+                  <h4 class="text-uppercase mt-20"><a href="https://knmodi.com/initiate_payment.aspx" target="_blank" class="text-white">Online Fee Payment</a></h4>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
+              <div class="sm-height-auto bg-theme-colored-darker4">
+                <div class="text-center pt-30 pb-30">
+                  <i class="fa fa-mobile text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="#" class="text-white">Call 8859500790</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section: About -->
+    <section id="about" style="background-color: #f7f8fa;">
+      <div class="container pb-70">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+              <!--<center><h2 class="text-uppercase mt-0">Welcome To <span class="text-theme-color-2">  dr.knmiet </span> (Top MBA/B.Tech/Engineering Institute in Modi Nagar, Meerut, UP)</h2></center>-->
+              <center><h1 class="text-uppercase mt-0" style="background-color:#1F386B;color:white">Welcome To <span class="text-theme-color-1">  Dr.Knmiet </span> </h1></center>
+              <p class="lead" align="justify"></p>
+              <!--<div class="row mt-40">
+                              <div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+                  <div class="mb-sm-30">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/Level/post-graduate_8rRJJKN9R0v0VufkYck7.jpeg" alt="Post Graduate">
+                    <h4 class="letter-space-1 mt-10">Post Graduate<span class="text-theme-color-2"> Courses</span></h4>
+                    <p></p>
+                    <a href="#" class="btn btn-sm btn-theme-colored">Read more</a>
+                  </div>
+                </div>
+			                <div class="col-md-6 wow fadeInUp" data-wow-duration="1s">
+                  <div class="mb-sm-30">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/Level/under-graduate_Jcg2KsBkLD2G5HuWXNeQ.jpeg" alt="Under Graduate">
+                    <h4 class="letter-space-1 mt-10">Under Graduate<span class="text-theme-color-2"> Courses</span></h4>
+                    <p></p>
+                    <a href="#" class="btn btn-sm btn-theme-colored">Read more</a>
+                  </div>
+                </div>
+			              </div>-->
+            </div>
+            <!--<div class="col-md-4 col-sm-12 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+             <div class="p-30 bg-theme-colored mt-10">
+                <h3 class="text-white mt-0 mb-10">Get A Free Registration!</h3>
+              <!-- Appilication Form Start--
+              <form id="reservation_form" name="reservation_form" class="reservation-form mt-20" method="post" action="http://kodesolution.com/demo/wxyz/w/learnpress/v1/demo/includes/reservation.php">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group mb-20">
+                      <input placeholder="Enter Name" type="text" id="reservation_name" name="reservation_name" required="" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input placeholder="Email" type="text" id="reservation_email" name="reservation_email" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input placeholder="Phone" type="text" id="reservation_phone" name="reservation_phone" class="form-control" required="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <div class="styled-select">
+                        <select id="person_select" name="person_select" class="form-control" required>
+                          <option value="">Gender</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <input name="Date" class="form-control required date-picker" type="text" placeholder="DOB" aria-required="true">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <div class="styled-select">
+                        <select id="person_select" name="person_select" class="form-control" required>
+                          <option value="">Gender</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group mb-20">
+                      <div class="styled-select">
+                        <select id="person_select" name="person_select" class="form-control" required>
+                          <option value="">Gender</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <textarea placeholder="Enter Message" rows="3" class="form-control required" name="form_message" id="form_message" aria-required="true"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form-group mb-0 mt-10">
+                      <input name="form_botcheck" class="form-control" type="hidden" value="">
+                      <input type="submit" class="btn btn-colored btn-default text-black btn-lg btn-block" data-loading-text="Please wait..." value="Submit Request"/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!-- Application Form End-->
+
+              <!-- Application Form Validation Start-->
+              <script type="text/javascript">
+                $("#reservation_form").validate({
+                  submitHandler: function(form) {
+                    var form_btn = $(form).find('button[type="submit"]');
+                    var form_result_div = '#form-result';
+                    $(form_result_div).remove();
+                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                    var form_btn_old_msg = form_btn.html();
+                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                    $(form).ajaxSubmit({
+                      dataType:  'json',
+                      success: function(data) {
+                        if( data.status == 'true' ) {
+                          $(form).find('.form-control').val('');
+                        }
+                        form_btn.prop('disabled', false).html(form_btn_old_msg);
+                        $(form_result_div).html(data.message).fadeIn('slow');
+                        setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                      }
+                    });
+                  }
+                });
+              </script>
+              <!-- Application Form Validation Start -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <marquee behavior="scroll"  direction="left" ><a  style="color:red;font-size:20px" href="index90ef.html?p=Events&amp;d=13">AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat” !</a></marquee>
+
+ <!-- Section: Blog -->
+    <section id="blog">
+      <div class="container pt-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1">Recent  <span class="text-theme-color-2"> News</span></h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+              <div class="owl-carousel-3col owl-nav-top mb-sm-0" data-dots="true">
+                            <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/empowering-future-entrepreneators-_vWFXOvIhBM2LZ3a8GxYU.jpg" alt="Empowering Future Entrepreneators !" class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/88.html">Empowering Future Entrepreneators !</a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2025-02-22</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    We're excited to announce the "Entrepreneurship Awareness Programme" organized by MSME Technology De <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/88.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/alumni-meet-dr.knmiet_UBMevjvlWHUL66lnLYgi.jpg" alt="Alumni Meet DR.KNMIET" class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/90.html">Alumni Meet DR.KNMIET</a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2024-12-29</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    Dr. K.N. Modi Institute of Engineering and Technology hosted its widely anticipated Annual Alumni Me <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/90.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/alumni-meet_zDOhiYSWgG6SNfoHiTM6.jpg" alt="Alumni Meet " class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/89.html">Alumni Meet </a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2024-12-14</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    On December 14, 2024, an Alumni Meet was organized at Dr. K. N. Modi Institute of Engineering and Te <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/89.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/industrial-visit-of-b.tech.-cse-students-at-cognizant_lklWcfyhUGAECNX2on69.jpg" alt="Industrial visit of B.Tech. CSE students at Cognizant" class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/92.html">Industrial visit of B.Tech. CSE students at Cognizant</a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2024-12-05</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    One Full Day Industrial Visit of B. Tech. (CSE) Final Year students to Cognizant Technologies, Noida <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/92.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/cricket-match_Rk5m9qmc0d2EhAtONosO.jpg" alt="Cricket Match" class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/93.html">Cricket Match</a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2024-11-09</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    On 9 th of November, our college witnessed an exhilarating and spirited friendly cricket match that  <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/93.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              <div class="item">
+                <article class="post clearfix maxwidth600 mb-sm-30 wow fadeInRight" data-wow-delay=".2s">
+                  <div class="entry-header">
+                    <div class="post-thumb thumb" style="height: 300px;"> <img src="/img/DRKNMIET-DASHBOARD/images/news/orientation-program-for-bba-and-bca-first-year-students_qrcD5k0Q0s1o2QiUbTet.jpg" alt="Inauguration of orientation Program for B.Tech. First Year on 29 th of August,2024" class="img-responsive img-fullwidth"> </div>
+                    <!--<div class="entry-meta meta-absolute text-center pl-10 pr-10">
+                    <div class="display-table">
+                      <div class="display-table-cell">
+                        <ul>
+                          <li><a class="text-white" href="#"><i class="fa fa-comments-o mt-0 pt-0"></i> 85 <br> comments</a></li>
+                          <li><a class="text-white" href="#"><i class="fa fa-thumbs-o-up mt-20"></i> 250 <br> Likes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>-->
+                  </div>
+                  <div class="entry-content border-1px p-20">
+                    <h4 class="entry-title mt-0 pt-0"><a href="page/News/91.html">Inauguration of orientation Program for B.Tech. First Year on 29 th of August,2024</a></h4>
+                      <span class="text-theme-colored mr-10 font-14">Admin | <i class="fa fa-calendar mr-5 text-theme-colored"></i> 2024-08-29</span>
+                    <p class="text-justify mb-20 mt-5 font-16" style="color:black">
+                    Orientation program for first year students was started on 29 th of Aug. in a very grand manner at D <a href="page/News.html" class="text-primary">Read More..</a>                    </p>
+                    <a class="btn btn-flat btn-dark btn-theme-colored btn-sm pull-left" href="page/News/91.html">Read more</a>
+                    <div class="clearfix"></div>
+                  </div>
+                </article>
+              </div>
+			              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Mission -->
+    <section id="mission">
+      <div class="container rounded-5 pt-0 pb-0">
+        <div class="row equal-height">
+          <div class=" col-md-6  xs-pull-none bg-theme-colored wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="pt-70 pb-40 pl-90 pr-160 p-md-30">
+              <h2 class="title text-white text-uppercase line-bottom mt-0 mb-30">Why Choose Us?</h2>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none"> 
+                  <i class="fa fa-desktop text-theme-color-2 font-36"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Best Labs</h4>
+                  <p class="text-white">The campus is well equipped with futuristic IT infrastructure in terms of interactive classrooms, Wi-Fi access throughout the confines, modern laboratories, smart classes and digital libraries.</p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-user text-theme-color-2 font-36"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Best Teachers</h4>
+                  <p class="text-white"></p>
+                </div>
+              </div>
+              <div class="icon-box clearfix m-0 p-0 pb-10">
+                <a href="#" class="icon icon-circled bg-white icon-lg pull-left flip sm-pull-none">
+                  <i class="fa fa-money text-theme-color-2 font-36"></i> 
+                </a>
+                <div class="ml-120 ml-sm-0">
+                  <h4 class="icon-box-title text-white mt-5 mb-10 letter-space-1">Low Cost Services</h4>
+                  <p class="text-white"></p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 p-0 bg-img-cover wow fadeInRight hidden-xs" data-bg-img="/img/DRKNMIET-DASHBOARD/Home/_2A8i6qj7eD1UXJEOC4eW.png" data-wow-duration="1s" data-wow-delay="0.3s">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: courses -->
+    <section>
+      <div class="container pt-70 pb-40">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-12 ">
+                <h1 style="background-color:#1F386B;color:white">Top Technical Institute in Delhi-NCR</h1>
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">Our <span class="text-theme-color-2">Courses</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="row multi-row-clearfix">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col owl-nav-top" data-nav="true">
+            				<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech - Artificial Intelligence" src="/img/DRKNMIET-DASHBOARD/images/Course/b.tech-artificial-intelligence_By8t1htUhQ98TddPqdwy.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/14.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/14.html">B. Tech - Artificial Intelligence</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="BBA" src="/img/DRKNMIET-DASHBOARD/images/Course/bba_5NUVUXabWqZ8WkxBtDfM.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/12.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/12.html">BBA</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> 10+2 in 45%</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 1,04,500 /-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>3 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="BCA" src="/img/DRKNMIET-DASHBOARD/images/Course/bca_u0opLL2XL0NiDocR3NRt.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/11.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/11.html">BCA</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> 10+2 in 45%</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 1,04,500/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>3 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech- Mechanical Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-mechanical-engineering_BjbvQcjXZZtlhhkJXkzo.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/10.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/10.html">B. Tech- Mechanical Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech- Civil  Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-civil-engineering_WAEIOjJ1m8A3S2JK4Gjc.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/9.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/9.html">B. Tech- Civil  Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech- Electrical Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-electrical-engineering_mXFxP5oMfyj64W7cq8gV.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/8.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/8.html">B. Tech- Electrical Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,00/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech- Information Technology" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-information-technology_enGV1JtvnlIioT0cIF3P.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/7.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/7.html">B. Tech- Information Technology</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech- Chemical Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-chemical-engineering_lvJtwZculpuX2o3xF9y7.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/6.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/6.html">B. Tech- Chemical Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B. Tech - Electronics and Communication Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.tech-electronics-and-communication-engineering_tjQzgIRGxqCCMeSpAQKa.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/2.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/2.html">B. Tech - Electronics and Communication Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 Years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+							<div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="B.Tech - Computer Science and Engineering" src="/img/DRKNMIET-DASHBOARD/images/Course/b.-tech-computer-science-and-engineering_xtEiaRI0zMhNcwCUgR5w.jpg">
+                    <div class="hover-link">
+                      <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-left font-20" href="page/Courses-View/1.html"><span>Read More..</span> </a>
+                    </div>
+                  </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    <h5 class="font-14 font-weight-500 mb-5"></h5>
+                    <h4 class="font-weight-700 text-uppercase mt-0 fnt"><a href="page/Courses-View/1.html">B.Tech - Computer Science and Engineering</a></h4>
+                    <!--<p align="justify">Admission shall be on the basis of merit of UPSEE examination conducted by UPTU Lucknow through counseling students in their first and second semester of the B. Tech in Computer Science & Engineering programme.</p>-->
+                    <ul class="list-inline project-conditions text-center m-0 p-10">
+                      <!--<li class="current-fund"><strong>Eligibility</strong> Passed 10+2 examination with Physics & Maths as compulsory Subjects with one of the Chemistry /Biotechnology/Biology/Technical Vocational Subject.Obtained at least 45%(40% in case of candidate belonging to reserved category) marks in the above subjects.</li>-->
+                      <!--<li class="target-fund"><strong>Course Fee</strong>Rs. 3,00,000/-</li>-->
+                      <li class="remaining-days" style="color:black; font-size:16px"><strong>Duration</strong>4 years</li>
+                    </ul>
+                    
+                    <!--<p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>
+                    <p align="center">You can find top MBA, B.Tech college / institute in NCR. </p>-->
+                    
+                  </div>
+                </div>
+              </div>
+			              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: events -->
+    
+    <!--section voice of Experience start---
+    <section id="courses">
+      <div class="container pt-70 pb-40">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">VOICE<span class="text-theme-color-2"> OF EXPERIENCE  </span></h2>
+              
+            </div>
+          </div>
+        </div>
+        <div class="row multi-row-clearfix">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col owl-nav-top" data-nav="true">
+              <div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="img/voice/11.png">
+                                      </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                                       
+                    <p>Dr K.N.Modi University has taken a big &amp; significant step by bringing World into India and showcasing India to the World. This congregation...</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/voice/12.png">
+                   </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                   
+                  
+                   <p>I congratulate Dr.K.N.Modi University for making the global education affordable. DKNMU is a platform where a world can learn ...</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="project mb-30 border-2px">
+                  <div class="thumb">
+                    <img class="img-fullwidth" alt="" src="images/voice/13.png">
+                                      </div>
+                  <div class="project-details p-15 pt-10 pb-10">
+                    
+                    
+                    <p>India is a very diverse society. I thank Dr K.N.Modi University for inviting and allowing sharing my thoughts on global education. I suggested Dr.K.N....</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section voice of Experience start--->
+    <!--section Events start--->
+    <section id="events" class="divider parallax layer-overlay overlay-dark-8" data-stellar-background-ratio="0.5" data-bg-img="images/bg/bg1.jpg">
+      <div class="container pt-50 pb-2" style="padding-bottom: 0px !important;">
+        <div class="section-title mb-30">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-white">Events</h2>
+              <p class="text-white"></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+                      <div class="col-xs-12 col-sm-4 col-md-4 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="thumb" style="position: absolute; clip: rect(auto,auto,150px,auto); padding-right: 15px;">
+                    <img class="img-fullwidth mb-sm-0" src="/img/DRKNMIET-DASHBOARD/images/events/aktu-pledge-programme-on-dahej-mukt-bharat-and-nasha-mukt-bharat-_l83ZWjxvch4gZ0rCwT8O.jpg" alt="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”">
+                    </div>
+                  </div>
+                  <div class="col-md-12 p-30 pl-sm-50" style="margin-top: 150px;height: 240px;">
+                    <h4 class="mt-0 mb-5"><a href="index90ef.html?p=Events&amp;d=13" class="text-white">AKTU Pledge Programme on " ...</a></h4>
+                    <ul class="list-inline mb-5 text-white">
+                      <li class="pr-0"><i class="fa fa-calendar mr-5"></i> 2025-03-07</li>
+                      <!--<li class="pl-5"><i class="fa fa-map-marker mr-5"></i>Niwai</li>-->
+                    </ul>
+                    <p class="mb-15 mt-15 text-white" align="justify">
+                    On March 7, 2025, at 12:15 PM, Dr. KNMIET organized a pledge programme... <!--<a href="?p=Events&d=13 class="text-primary">Read More..</a>-->                    </p>
+                    <a class="text-white font-weight-600" href="index90ef.html?p=Events&amp;d=13">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="thumb" style="position: absolute; clip: rect(auto,auto,150px,auto); padding-right: 15px;">
+                    <img class="img-fullwidth mb-sm-0" src="/img/DRKNMIET-DASHBOARD/images/events/alumni-meet-on-29-th-of-dec._YMNtFNDEkLp1AVDITSRn.jpg" alt="Alumni Meet on 29 th of Dec.">
+                    </div>
+                  </div>
+                  <div class="col-md-12 p-30 pl-sm-50" style="margin-top: 150px;height: 240px;">
+                    <h4 class="mt-0 mb-5"><a href="index9938.html?p=Events&amp;d=12" class="text-white">Alumni Meet on 29 th of De ...</a></h4>
+                    <ul class="list-inline mb-5 text-white">
+                      <li class="pr-0"><i class="fa fa-calendar mr-5"></i> 2024-12-29</li>
+                      <!--<li class="pl-5"><i class="fa fa-map-marker mr-5"></i>Niwai</li>-->
+                    </ul>
+                    <p class="mb-15 mt-15 text-white" align="justify">
+                    Dr. K.N. Modi Institute of Engineering and Technology hosted its widel... <!--<a href="?p=Events&d=12 class="text-primary">Read More..</a>-->                    </p>
+                    <a class="text-white font-weight-600" href="index9938.html?p=Events&amp;d=12">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      <div class="col-xs-12 col-sm-4 col-md-4 mb-30 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="pricing table-horizontal maxwidth400">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="thumb" style="position: absolute; clip: rect(auto,auto,150px,auto); padding-right: 15px;">
+                    <img class="img-fullwidth mb-sm-0" src="/img/DRKNMIET-DASHBOARD/images/events/alumni-meet-on-14-th-of-december_KW6yAaIAzeRuieiMAGvG.jpg" alt="Alumni Meet on 14 th of December">
+                    </div>
+                  </div>
+                  <div class="col-md-12 p-30 pl-sm-50" style="margin-top: 150px;height: 240px;">
+                    <h4 class="mt-0 mb-5"><a href="index3133.html?p=Events&amp;d=6" class="text-white">Alumni Meet on 14 th of De ...</a></h4>
+                    <ul class="list-inline mb-5 text-white">
+                      <li class="pr-0"><i class="fa fa-calendar mr-5"></i> 2024-12-14</li>
+                      <!--<li class="pl-5"><i class="fa fa-map-marker mr-5"></i>Niwai</li>-->
+                    </ul>
+                    <p class="mb-15 mt-15 text-white" align="justify">
+                    On December 14, 2024, an Alumni Meet was organized at Dr. K. N. Modi I... <!--<a href="?p=Events&d=6 class="text-primary">Read More..</a>-->                    </p>
+                    <a class="text-white font-weight-600" href="index3133.html?p=Events&amp;d=6">Read More...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      
+          
+          </div>
+        </div>
+        <div class="section-title mb-1">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <!--<h2 class="mt-0 line-height-1 text-center mb-10 text-white">Events</h2>-->
+              <a class="btn btn-flat btn-dark btn-theme-colored btn-md pull-center font-20" href="page/Events.html"><span>View All Evants</span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	 <!--section Events end--->
+    <!-- Section: Teachers -->
+    <section id="teachers">
+      <div class="container pt-70 pb-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">Our <span class="text-theme-color-2"> Teachers</span></h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="row mtli-row-clearfix">
+          <div class="col-md-12">
+            <div class="owl-carousel-4col">
+                            <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Dr. Deepankar Sharma" src="/img/DRKNMIET-DASHBOARD/images/FrontFaculty/dr.-deepankar-sharma_f4yRTClCdlr28UTQ8n9y.webp">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Dr. Deepankar Sharma</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">EXECUTIVE DIRECTOR	</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Dr. Shishir Rastogi" src="/img/DRKNMIET-DASHBOARD/images/FrontFaculty/shishir-rastogi_i5AXh8WKii9GKPe5C3iT.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Dr. Shishir Rastogi</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black"> Director</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Nisha Vishnoi" src="/img/DRKNMIET-DASHBOARD/images/faculty/dr.-nisha-vishnoi_QV6qoCo4UqdsdTyXFobC.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Nisha Vishnoi</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Dr. BRIJESH KUMAR" src="/img/DRKNMIET-DASHBOARD/images/faculty/dr.-brijesh-kumar_yC6hneoZeLXoR9K3xzyG.webp">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Dr. BRIJESH KUMAR</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSISTANT PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="SAURABH SHARMA" src="/img/DRKNMIET-DASHBOARD/images/faculty/saurabh-sharma-_ux6B6MkUQIrS4cdHWAwA.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">SAURABH SHARMA</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSOCIATE PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="NIDHEESH SHARMA" src="/img/DRKNMIET-DASHBOARD/images/faculty/nidheesh-sharma-_um96m9eHgCoGGgCcKoWK.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">NIDHEESH SHARMA</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSOCIATE PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="DR.Dharmendra Singh" src="/img/DRKNMIET-DASHBOARD/images/FrontFaculty/dr.dharmendra-singh_1KWrCVBCrq82POYJ8b4s.webp">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">DR.Dharmendra Singh</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSISTANT PROFESSOR	</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Mohit Gupta" src="/img/DRKNMIET-DASHBOARD/images/faculty/mohit-gupta-_ZdvJSIuSAqeFOdWSn3Sc.webp">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Mohit Gupta</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSISTANT PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Pramod Kumar Garg" src="/img/DRKNMIET-DASHBOARD/images/faculty/pramod-kumar-garg_v9jdUStSXqo3DxFTrfFT.webp">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h4 class="text-uppercase font-weight-600 m-5">Pramod Kumar Garg</h4>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">ASSISTANT PROFESSOR</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Our Mentors -->
+    <section id="teachers" style="background-color: #f5fff4;">
+      <div class="container pt-70 pb-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">Our <span class="text-theme-color-2"> Mentors</span></h2>
+              <!--<p></p>-->
+            </div>
+          </div>
+        </div>
+        <div class="row mtli-row-clearfix">
+          <div class="col-md-12">
+            <div class="owl-carousel-3col">
+                            <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Prof(Dr) Rakesh Kumar Khandal" src="/img/DRKNMIET-DASHBOARD/images/mentors/prof-dr-rakesh-kumar-khandal_5dtbh3U6PGx8JR3ZkPzL.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h5 class="text-uppercase font-weight-600 m-5">Prof(Dr) Rakesh Kumar Khandal</h5>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">Chief Mentor</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="page/MentorsView/1.html"><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Maj Gen M S Sandhu VSM (Retd) " src="/img/DRKNMIET-DASHBOARD/images/mentors/maj-gen-m-s-sandhu-vsm-retd-_7ZOETe1bIcWLmqmqJllA.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h5 class="text-uppercase font-weight-600 m-5">Maj Gen M S Sandhu VSM (Retd) </h5>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">Mentor </h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="page/MentorsView/2.html"><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Lt Gen Amit Sarin PVSM (Retd)" src="/img/DRKNMIET-DASHBOARD/images/mentors/lt-gen-amit-sarin-pvsm-retd-_xD1FoE9Y73OY5QKNfeHl.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h5 class="text-uppercase font-weight-600 m-5">Lt Gen Amit Sarin PVSM (Retd)</h5>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">Mentor </h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="page/MentorsView/3.html"><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			              <div class="item">
+                <div class="team-members border-bottom-theme-color-2px text-center maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="Dr. Rita Bakshi" src="/img/DRKNMIET-DASHBOARD/images/mentors/dr.-rita-bakshi_LDic7SVby8MuCT49iZey.jpg">
+                    <div class="team-overlay"></div>
+                  </div>
+                  <div class="team-details bg-silver-light pt-10 pb-10">
+                    <h5 class="text-uppercase font-weight-600 m-5">Dr. Rita Bakshi</h5>
+                    <h6 class=" font-15 font-weight-400 mt-0" style="color:black">Advisor</h6>
+                    <ul class="styled-icons icon-theme-colored icon-dark icon-circled icon-sm">
+                      <li><a href="page/MentorsView/4.html"><i class="fa fa-hand-o-up" aria-hidden="true"></i></a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+			            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Funfact -->
+    <section class="divider parallax layer-overlay" data-bg-img="images/bg/bg6.jpg" data-parallax-ratio="0.7">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-home mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="10" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Departments</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-book mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="10" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Courses</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa fa-users mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="240+" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Placement Company Visit</h4>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="fa  fa-graduation-cap mt-5 text-white"></i>
+              <h2 data-animation-duration="2000" data-value="2000" class="animate-number text-white mt-0 font-38 font-weight-500">0</h2>
+              <h4 class="text-white text-uppercase">Students</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Gallery Grid 3 -->
+    <section id="gallery">
+      <div class="container pt-70 pb-70">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">Our <span class="text-theme-color-2">Gallery</span></h2>
+              <p class="mb-0 pb-0"></p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Portfolio Filter --
+              <div class="portfolio-filter font-alt align-center text-center mb-6 0">
+                <a href="#" class="active" data-filter="*">All</a>
+                <a href="#photos" class="" data-filter=".photos">Photos</a>
+                <a href="#campus" class="" data-filter=".campus">Campus</a>
+                <a href="#students" class="mt-10" data-filter=".students">Students</a>
+              </div>
+              <!-- End Portfolio Filter -->
+
+              <!-- Portfolio Gallery Grid -->
+              <div class="gallery-isotope grid-4 gutter-small clearfix" data-lightbox="gallery">
+                               <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/6_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/6_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/5_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/5_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/4_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/4_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/3_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/3_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/2_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/2_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/1_1742274670.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/1_1742274670.jpg" data-lightbox-gallery="gallery" title="AKTU Pledge Programme on "Dahej Mukt Bharat" and "Nasha Mukt Bharat”"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/2_1740467788.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Orientation Program on 29th of Aug. 2024                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/2_1740467788.jpg" data-lightbox-gallery="gallery" title="Orientation Program on 29th of Aug. 2024"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/1_1740467788.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Orientation Program on 29th of Aug. 2024                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/1_1740467788.jpg" data-lightbox-gallery="gallery" title="Orientation Program on 29th of Aug. 2024"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/9_1740466771.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Entrepreneurship Awareness Programme                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/9_1740466771.jpg" data-lightbox-gallery="gallery" title="Entrepreneurship Awareness Programme"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/7_1740466771.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Entrepreneurship Awareness Programme                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/7_1740466771.jpg" data-lightbox-gallery="gallery" title="Entrepreneurship Awareness Programme"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/6_1740466771.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Entrepreneurship Awareness Programme                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/6_1740466771.jpg" data-lightbox-gallery="gallery" title="Entrepreneurship Awareness Programme"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                <!-- Portfolio Item Start -->
+                <div class="gallery-item campus">
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="/img/DRKNMIET-DASHBOARD/gallery/photo/5_1740466771.jpg" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="text-holder">
+                      <div class="title text-center">
+                         Entrepreneurship Awareness Programme                      </div>
+                    </div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a href="/img/DRKNMIET-DASHBOARD/gallery/photo/5_1740466771.jpg" data-lightbox-gallery="gallery" title="Entrepreneurship Awareness Programme"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Portfolio Item End -->
+                                
+              </div>
+              <!-- End Portfolio Gallery Grid -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Client Say -->
+    <section class="divider parallax layer-overlay overlay-dark-4" data-background-ratio="0.5" data-bg-img="images/bg/bg2.jpg">
+      <div class="container pt-60 pb-60">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <h2 class="text-uppercase mt-0 pb-0  text-center text-white">Testimonials</h2>
+            <div class="owl-carousel-1col" data-dots="true">
+            			
+              <div class="item">
+                <div class="testimonial-wrapper text-center">
+                  <div class="thumb"><img class="" alt="Varsha" src="/img/DRKNMIET-DASHBOARD/images/Testimonials/varsha_yphM7O6eWvljxsDGGci1.png"></div>
+                  <div class="content pt-10">
+                    <p class="lead text-white">"Our college aims at the holistic development of students. The college authorities..."</p>
+                    <h4 class="author text-white mb-0">Varsha</h4>
+                    <!--<h6 class="title text-white mt-0 mb-15">EE-3rd Year</h6>-->
+                  </div>
+                </div>
+              </div>
+              			
+              <div class="item">
+                <div class="testimonial-wrapper text-center">
+                  <div class="thumb"><img class="" alt="Shubhangi Gupta " src="/img/DRKNMIET-DASHBOARD/images/Testimonials/shubhangi-gupta-_t9WOduSaH0pVLhYbgeEK.png"></div>
+                  <div class="content pt-10">
+                    <p class="lead text-white">"Our college has improved a lot since I took admission. All labs are fully conducted..."</p>
+                    <h4 class="author text-white mb-0">Shubhangi Gupta </h4>
+                    <!--<h6 class="title text-white mt-0 mb-15">EE-3rd Year</h6>-->
+                  </div>
+                </div>
+              </div>
+              			
+              <div class="item">
+                <div class="testimonial-wrapper text-center">
+                  <div class="thumb"><img class="" alt="Prasoon Gupta" src="/img/DRKNMIET-DASHBOARD/images/Testimonials/prasoon-gupta_PI9KpjDRCPGae3HbBVtV.png"></div>
+                  <div class="content pt-10">
+                    <p class="lead text-white">"Dr. KNMIET has given us new hopes for excellent technical education."</p>
+                    <h4 class="author text-white mb-0">Prasoon Gupta</h4>
+                    <!--<h6 class="title text-white mt-0 mb-15">EE-3rd Year</h6>-->
+                  </div>
+                </div>
+              </div>
+              			
+              <div class="item">
+                <div class="testimonial-wrapper text-center">
+                  <div class="thumb"><img class="" alt="Anchal Dwivedi " src="/img/DRKNMIET-DASHBOARD/images/Testimonials/anchal-dwivedi-_dmvtltbChs5RMjtl0PFv.png"></div>
+                  <div class="content pt-10">
+                    <p class="lead text-white">"It gives us so much satisfaction that the institute is so helpful to the students."</p>
+                    <h4 class="author text-white mb-0">Anchal Dwivedi </h4>
+                    <!--<h6 class="title text-white mt-0 mb-15">EE-3rd Year</h6>-->
+                  </div>
+                </div>
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- Gallery Grid 3 -->
+    <section id="gallery" class="placed-student-section padding-top-0">
+      <div class="container pt-70 pb-10">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="mt-0 line-height-1 text-center mb-10 text-black-333">Our  <span class="text-theme-color-2">Placed Students</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+             
+              
+                
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/1.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/1.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/2.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/2.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/3.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/3.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/4.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/4.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/5.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/5.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6">
+                  <div class="gallery-item campus">
+                    <div class="thumb">
+                      <img class="img-fullwidth" src="img/Placed-Students/6.jpg" alt="project">
+                      <div class="overlay-shade"></div>
+                      <div class="icons-holder">
+                        <div class="icons-holder-inner">
+                          <div class="styled-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                            <a href="img/Placed-Students/6.jpg" data-lightbox-gallery="gallery"><i class="fa fa-picture-o"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+             
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   
+
+    <!-- Divider: Clients -->
+    <section class="clients bg-theme-colored" style="background-color: #ffffff !important;">
+      <div class="container pt-10 pb-0 pb-sm-0 pt-sm-0">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Section: Clients -->
+            <div class="owl-carousel-6col transparent text-center owl-nav-top">
+                                <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/2_1501538638.jpg" alt="hsbc_SKDVHBLiKPSnBqjNpv4Y.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/2_1501538638.jpeg" alt="hsbc_SKDVHBLiKPSnBqjNpv4Y.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/3_1501538638.jpg" alt="hul_TDnhRG1oJTBYHqVON8ma.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/3_1501538638.jpeg" alt="hul_TDnhRG1oJTBYHqVON8ma.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/4_1501538638.jpg" alt="ibm.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/4_1501538638.jpeg" alt="ibm.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/5_1501538638.jpg" alt="icici-bank_V9hWVFGp13jFKhEMu6DU.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/5_1501538638.jpeg" alt="icici-bank_V9hWVFGp13jFKhEMu6DU.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/6_1501538638.jpg" alt="idbi-bank_GiZ7AU4GmPrhOxU0dy0b.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/6_1501538638.jpeg" alt="idbi-bank_GiZ7AU4GmPrhOxU0dy0b.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/7_1501538638.jpg" alt="i-flex_5AdJehqOsQy9N1gNgVIP.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/7_1501538638.jpeg" alt="i-flex_5AdJehqOsQy9N1gNgVIP.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/8_1501538638.jpg" alt="indiabulls_ClFhUOWF0xAtkTlfg6TY.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/8_1501538638.jpeg" alt="indiabulls_ClFhUOWF0xAtkTlfg6TY.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/9_1501538638.jpg" alt="india-infolin_KTdaBgK01RR7QoXCskeW.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/9_1501538638.jpeg" alt="india-infolin_KTdaBgK01RR7QoXCskeW.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/10_1501538638.jpg" alt="infosys.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/10_1501538638.jpeg" alt="infosys.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/11_1501538638.jpg" alt="itc_jZpCa8Ctvf2lFfSiriDZ.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/11_1501538638.jpeg" alt="itc_jZpCa8Ctvf2lFfSiriDZ.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/12_1501538638.jpg" alt="j.k.industry_yzc6RmfK6GMMN36OXgKk.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/12_1501538638.jpeg" alt="j.k.industry_yzc6RmfK6GMMN36OXgKk.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/13_1501538638.jpg" alt="jonhson_KANupWzOCdTAGSHoiDcv.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/13_1501538638.jpeg" alt="jonhson_KANupWzOCdTAGSHoiDcv.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/14_1501538638.jpg" alt="keane_wR8M9K5lO1RC3jC96mme.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/14_1501538638.jpeg" alt="keane_wR8M9K5lO1RC3jC96mme.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/15_1501538638.jpg" alt="lt_nqO7ATlzbXjUDoD9KxGU.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/15_1501538638.jpeg" alt="lt_nqO7ATlzbXjUDoD9KxGU.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/16_1501538638.jpg" alt="lupin_FkKGlzYyTbUjGqT0yyu7.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/16_1501538638.jpeg" alt="lupin_FkKGlzYyTbUjGqT0yyu7.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/17_1501538638.jpg" alt="maruti_MQMmlciKa9M8O0auh2Jo.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/17_1501538638.jpeg" alt="maruti_MQMmlciKa9M8O0auh2Jo.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/18_1501538638.jpg" alt="max_lyzZns0KFAaiASZuq7sW.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/18_1501538638.jpeg" alt="max_lyzZns0KFAaiASZuq7sW.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/19_1501538638.jpg" alt="nestle_AngCxIqewrfU9avwBQaZ.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/19_1501538638.jpeg" alt="nestle_AngCxIqewrfU9avwBQaZ.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/20_1501538638.jpg" alt="oriflame_GDm7Ne0TZUwLgJkf40nd.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/20_1501538638.jpeg" alt="oriflame_GDm7Ne0TZUwLgJkf40nd.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/1_1501538667.jpg" alt="parle_3DYj6fP8j4HrPZpDxdIf.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/1_1501538667.jpeg" alt="parle_3DYj6fP8j4HrPZpDxdIf.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/2_1501538667.jpg" alt="pepsico_f2HGvM5fFxM4eJMo9rzq.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/2_1501538667.jpeg" alt="pepsico_f2HGvM5fFxM4eJMo9rzq.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/3_1501538667.jpg" alt="perpftte_gq5I4pJmtCetlhb43URh.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/3_1501538667.jpeg" alt="perpftte_gq5I4pJmtCetlhb43URh.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/4_1501538667.jpg" alt="p-g_aF4APDwdkrOCiTIA7E5x.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/4_1501538667.jpeg" alt="p-g_aF4APDwdkrOCiTIA7E5x.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/5_1501538667.jpg" alt="ranbaxi_s1lc6F97dpwKWJsTuJc0.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/5_1501538667.jpeg" alt="ranbaxi_s1lc6F97dpwKWJsTuJc0.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/6_1501538667.jpg" alt="religare_hNxRPxYa5ItD4HdKy4B1.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/6_1501538667.jpeg" alt="religare_hNxRPxYa5ItD4HdKy4B1.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/7_1501538667.jpg" alt="samsung_61GueW2KDNaVZN3OsQ17.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/7_1501538667.jpeg" alt="samsung_61GueW2KDNaVZN3OsQ17.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/8_1501538667.jpg" alt="shcil_yeGZ9hykc5s5rRALLMpM.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/8_1501538667.jpeg" alt="shcil_yeGZ9hykc5s5rRALLMpM.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/9_1501538667.jpg" alt="sony_4K6qdfknxqhHa2afH7wK.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/9_1501538667.jpeg" alt="sony_4K6qdfknxqhHa2afH7wK.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/10_1501538667.jpg" alt="tata-motors_P6BpteLMLpdR4tF5EVZs.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/10_1501538667.jpeg" alt="tata-motors_P6BpteLMLpdR4tF5EVZs.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/11_1501538667.jpg" alt="vodafone_LPN44f45xlufrNneafoJ.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/11_1501538667.jpeg" alt="vodafone_LPN44f45xlufrNneafoJ.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                            <div class="item"> <a href="#"><img src="/img/DRKNMIET-DASHBOARD/gallery/company/12_1501538667.jpg" alt="wipro_9w5QJxPlI9GshBgKxnQY.jpeg"></a></div>
+              <!--<img src="DRKNMIET-DASHBOARD/gallery/company/12_1501538667.jpeg" alt="wipro_9w5QJxPlI9GshBgKxnQY.jpeg" style="height: 65px; margin-right: 10px;" >-->
+                          
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: company logos --
+    <section id="teachers">
+        <div class="container pt-30 pb-30">
+      <div class="row">
+        <marquee behavior="alternate" scrolldelay="250" onmouseover="this.stop();" onmouseout="this.start();">
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/2_1501538638.jpeg" alt="hsbc_SKDVHBLiKPSnBqjNpv4Y.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/3_1501538638.jpeg" alt="hul_TDnhRG1oJTBYHqVON8ma.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/4_1501538638.jpeg" alt="ibm.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/5_1501538638.jpeg" alt="icici-bank_V9hWVFGp13jFKhEMu6DU.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/6_1501538638.jpeg" alt="idbi-bank_GiZ7AU4GmPrhOxU0dy0b.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/7_1501538638.jpeg" alt="i-flex_5AdJehqOsQy9N1gNgVIP.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/8_1501538638.jpeg" alt="indiabulls_ClFhUOWF0xAtkTlfg6TY.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/9_1501538638.jpeg" alt="india-infolin_KTdaBgK01RR7QoXCskeW.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/10_1501538638.jpeg" alt="infosys.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/11_1501538638.jpeg" alt="itc_jZpCa8Ctvf2lFfSiriDZ.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/12_1501538638.jpeg" alt="j.k.industry_yzc6RmfK6GMMN36OXgKk.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/13_1501538638.jpeg" alt="jonhson_KANupWzOCdTAGSHoiDcv.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/14_1501538638.jpeg" alt="keane_wR8M9K5lO1RC3jC96mme.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/15_1501538638.jpeg" alt="lt_nqO7ATlzbXjUDoD9KxGU.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/16_1501538638.jpeg" alt="lupin_FkKGlzYyTbUjGqT0yyu7.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/17_1501538638.jpeg" alt="maruti_MQMmlciKa9M8O0auh2Jo.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/18_1501538638.jpeg" alt="max_lyzZns0KFAaiASZuq7sW.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/19_1501538638.jpeg" alt="nestle_AngCxIqewrfU9avwBQaZ.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/20_1501538638.jpeg" alt="oriflame_GDm7Ne0TZUwLgJkf40nd.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/1_1501538667.jpeg" alt="parle_3DYj6fP8j4HrPZpDxdIf.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/2_1501538667.jpeg" alt="pepsico_f2HGvM5fFxM4eJMo9rzq.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/3_1501538667.jpeg" alt="perpftte_gq5I4pJmtCetlhb43URh.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/4_1501538667.jpeg" alt="p-g_aF4APDwdkrOCiTIA7E5x.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/5_1501538667.jpeg" alt="ranbaxi_s1lc6F97dpwKWJsTuJc0.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/6_1501538667.jpeg" alt="religare_hNxRPxYa5ItD4HdKy4B1.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/7_1501538667.jpeg" alt="samsung_61GueW2KDNaVZN3OsQ17.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/8_1501538667.jpeg" alt="shcil_yeGZ9hykc5s5rRALLMpM.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/9_1501538667.jpeg" alt="sony_4K6qdfknxqhHa2afH7wK.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/10_1501538667.jpeg" alt="tata-motors_P6BpteLMLpdR4tF5EVZs.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/11_1501538667.jpeg" alt="vodafone_LPN44f45xlufrNneafoJ.jpeg" style="height: 65px; margin-right: 10px;" >
+                          <img src="/img/DRKNMIET-DASHBOARD/gallery/company/12_1501538667.jpeg" alt="wipro_9w5QJxPlI9GshBgKxnQY.jpeg" style="height: 65px; margin-right: 10px;" >
+                    </marquee>
+      </div>
+        </div>
+    </section>-->
+  </div>
+    <!-- end main-content -->  <!-- Footer -->
+  <footer id="footer" class="footer bg-black-222" data-bg-img="images/footer-bg.html">
+    <div class="container pt-70 pb-40   mm"><div class="row"><div class="col-sm-6 col-md-3"><div class="widget dark"><img class="mt-10 mb-15 fr-fic fr-dii" alt="" src="img/logo-knmodifoundation.jpg"><p class="text-justify font-16 mb-10 text-white">KNMIET is located at Modinagar on the national highway-58 and is at a distance of about 32 km from Delhi border.</p><a class="font-14" href="https://play.google.com/store/apps/details?id=com.knmodi.app" rel="noopener noreferrer" style="display:none" target="_blank"><i class="fa fa-angle-double-right text-theme-colored"></i> Read more<img src="DRKNMIET-DASHBOARD/upload/google-play_l8wfn4L6YBY1tsQvMJxl.png" style="width: 200px;" class="fr-fic fr-dib"></a><ul class="styled-icons icon-dark mt-20"><li class="wow fadeInLeft" data-wow-delay=".1s" data-wow-duration="1.5s" data-wow-offset="10"><a data-bg-color="#3B5998" href="https://www.facebook.com/KNMIET.EDU" rel="noopener noreferrer" target="_blank"><i class="fa fa-facebook"></i></a></li><li class="wow fadeInLeft" data-wow-delay=".2s" data-wow-duration="1.5s" data-wow-offset="10"><a data-bg-color="#02B0E8" href="https://www.instagram.com/knmietmodinagar/" rel="noopener noreferrer" target="_blank"><i class="fa fa-instagram"></i></a></li><li class="wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="1.5s" data-wow-offset="10"><a data-bg-color="#05A7E3" href="https://www.linkedin.com/school/knmietmodinagar/" rel="noopener noreferrer" target="_blank"><i class="fa fa-linkedin"></i></a></li></ul></div></div><div class="col-sm-6 col-md-3"><div class="widget dark"><h5 class="widget-title line-bottom">Quick Links</h5><ul class="list angle-double-right list-border"><li><a href="page/Campus.html"><label class="text-white">Campus</label></a></li><li><a href="page/Facilities.html"><label class="text-white">Student Zone</label></a></li><li><a href="https://dash.knmodi.com/" rel="noopener noreferrer" target="_blank"><label class="text-white">Employer / Member login</label></a><a href="https://dash.knmodi.com/" rel="noopener noreferrer" target="_blank"></a></li><li><a href="https://delnet.in/" rel="noopener noreferrer" target="_blank"><label class="text-white">E-Journals / E-Library</label></a><a href="https://delnet.in/" rel="noopener noreferrer" target="_blank"></a></li><li><a href="page/EContent.html"><label class="text-white">E-Content</label></a></li><li><a href="https://www.education.gov.in/hi/ict-initiatives" rel="noopener noreferrer" target="_blank"><label class="text-white">NMEICT</label></a></li><li><a href="page/RTIAct.html"><label class="text-white">RTI Act</label></a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLScygpXN-PgnWmttfDBrZY3gfMdrUVKVS827yC47ApqOx0fHPg/viewform?usp=sf_link" rel="noopener noreferrer" target="_blank"><label class="text-white">Feedback Form</label></a></li><li><a href="page/CapabilityEnhancementAndDevelopment.html"><label class="text-white">Capability Enhancement and Development</label></a></li><li><a href="DRKNMIET-DASHBOARD/upload/3.2.2_c45YlfsEkcWivfie2Ie7.pdf" rel="noopener noreferrer" target="_blank"><label class="text-white">IPR Activities</label></a></li><li><a href="https://prutor.ai/college/aktucc77-dr-k-n-modi-institute-of-engineering-technology-ghaziabad/" rel="noopener noreferrer" target="_blank"><label class="text-white">Prutor,IITK</label></a></li><li><a href="DRKNMIET-DASHBOARD/upload/nirf_dcs_2025_overall_xBKfiGQtfHPngrNrNWPa.pdf" rel="noopener noreferrer" target="_blank"><label class="text-white">NIRF DCS 2025</label></a></li></ul></div></div><div class="col-sm-6 col-md-3"><div class="widget dark"><h5 class="widget-title line-bottom">Useful Links</h5><ul class="list angle-double-right list-border"><li><a href="page/News.html"><label class="text-white">News</label></a></li><li><a href="page/Events.html"><label class="text-white">Events</label></a></li><li><a href="page/SendCv.html"><label class="text-white">Careers</label></a></li><li><a href="page/StudentCorner.html"><label class="text-white">Student Corner</label></a></li><li><a href="http://alumni.knmodi.in/" rel="noopener noreferrer" target="_blank"><label class="text-white">Alumni</label></a></li><li><a href="page/Testimonials.html"><label class="text-white">Testimonials</label></a></li><li><a href="page/SPANDAN.html"><label class="text-white">Beyond Academics</label></a></li><li><a href="page/ContactUs.html"><label class="text-white">Contact Us</label></a></li></ul><br></div></div><div class="col-sm-6 col-md-3"><div class="widget dark"><h5 class="widget-title line-bottom">Quick Contact</h5><ul class="list-border"><li><a href="#"><label class="text-white">director@knmiet.edu</label></a></li><li><a class="lineheight-20 text-white" href="#">Dr. K. N. Modi Institute of Engineering &amp; Technology
+Kapda Mill opposite SBI Main Branch, Modinagar-201204 (UP) INDIA</a></li></ul><p class="font-16 text-white mb-5 mt-15" style="display:none">Subscribe to our newsletter</p><div class="input-group" style="display:none"><input type="email" value="" name="EMAIL" placeholder="Your Email" class="form-control" data-height="37px" id="mce-EMAIL">
+<span class="input-group-btn"><button class="btn btn-colored btn-theme-colored m-0" type="submit"><i class="fa fa-paper-plane-o text-white"></i></button></span></div></div></div></div></div>    <!-- Mailchimp Subscription Form Validation-->
+            <script type="text/javascript">
+              $('#footer-mailchimp-subscription-form').ajaxChimp({
+                  callback: mailChimpCallBack,
+                  url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+              });
+
+              function mailChimpCallBack(resp) {
+                  // Hide any previous response text
+                  var $mailchimpform = $('#footer-mailchimp-subscription-form'),
+                      $response = '';
+                  $mailchimpform.children(".alert").remove();
+                  if (resp.result === 'success') {
+                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  } else if (resp.result === 'error') {
+                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                  }
+                  $mailchimpform.prepend($response);
+              }
+            </script>
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-6">
+            <!--<p class="font-11 text-black-777 m-0">Copyright &copy;2015 ThemeMascot. All Rights Reserved</p>-->
+            <p class="font-11 text-black-777 m-0">Developed by <a target="_blank" href="https://techdost.com/"><strong>TechDost</strong></a></p>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Help Desk</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper --> 
+
+<!-- Footer Scripts --> 
+<!-- JS | Custom script for all pages --> 
+<script src="js/custom.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) --> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script> 
+<script type="text/javascript" src="/javascript/js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+</body>
+
+<!-- Mirrored from kodesolution.com/demo/wxyz/w/learnpress/v1/demo/index-mp-layout1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Jan 2017 08:10:46 GMT -->
+
+<!-- Mirrored from www.knmiet.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Mar 2025 11:48:10 GMT -->
+</html>

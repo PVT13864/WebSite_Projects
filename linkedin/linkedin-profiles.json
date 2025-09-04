@@ -1,0 +1,149 @@
+{
+  "name": "LinkedIn Profiles Extractor",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "1",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://www.googleapis.com/customsearch/v1",
+        "options": {},
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "key",
+              "value": "AIzaSyBgWfR86aoVRHcLMvXt0OWGucP4WhANrCQ"
+            },
+            {
+              "name": "cx",
+              "value": "d5f1e27cc3dde4626"
+            },
+            {
+              "name": "q",
+              "value": "site:linkedin.com/in/ connections"
+            },
+            {
+              "name": "num",
+              "value": "100"
+            }
+          ]
+        }
+      },
+      "id": "2",
+      "name": "Google Search API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "functionCode": "return items[0].json.items.map(i => {\n  return {\n    json: {\n      name: i.title,\n      link: i.link,\n      snippet: i.snippet\n    }\n  };\n});"
+      },
+      "id": "3",
+      "name": "Extract Profiles",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [750, 300]
+    },
+    {
+      "parameters": {
+        "model": "o4-mini-2025-04-16",
+        "prompt": "Classify the following LinkedIn profile text as Male :\n\n{{$json[\"snippet\"]}}",
+        "temperature": 0
+      },
+      "id": "4",
+      "name": "AI Gender Classifier",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [1000, 300],
+      "credentials": {
+        "openAiApi": {
+          "id": "your-openai-credential-id",
+          "name": "OpenAI API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "functionCode": "return items.filter(i => {\n  const text = (i.json.answer || '').toLowerCase();\n  return text.includes('male');\n});"
+      },
+      "id": "5",
+      "name": "Filter Male Only",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1250, 300]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "6",
+      "name": "Save to Spreadsheet",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "typeVersion": 1,
+      "position": [1500, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Google Search API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Search API": {
+      "main": [
+        [
+          {
+            "node": "Extract Profiles",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Profiles": {
+      "main": [
+        [
+          {
+            "node": "AI Gender Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Gender Classifier": {
+      "main": [
+        [
+          {
+            "node": "Filter Male Only",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter Male Only": {
+      "main": [
+        [
+          {
+            "node": "Save to Spreadsheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
